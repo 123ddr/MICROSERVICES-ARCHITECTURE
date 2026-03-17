@@ -1,0 +1,4 @@
+package com.MICROSERVICES_ARCHITECTURE.MICROSERVICES_ARCHITECTURE.Auth_Service;
+
+public class com {
+}

@@ -2,9 +2,11 @@ package com.MICROSERVICES_ARCHITECTURE.MICROSERVICES_ARCHITECTURE.PRODUCT_SERVIC
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "categories")
+@Data
 public class CategoryEntity {
 
     @Id

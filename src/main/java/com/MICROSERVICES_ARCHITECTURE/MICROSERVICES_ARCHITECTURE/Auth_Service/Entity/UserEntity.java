@@ -1,10 +1,12 @@
-package com.MICROSERVICES_ARCHITECTURE.MICROSERVICES_ARCHITECTURE.USER_SERVICE.User_Service.Entity;
+package com.MICROSERVICES_ARCHITECTURE.MICROSERVICES_ARCHITECTURE.Auth_Service.Entity;
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "users")
+@Data
 public class UserEntity {
 
     @Id
@@ -14,6 +16,5 @@ public class UserEntity {
     private String username;
     private String email;
     private String password;
-    private String role;
+    private String role; // ADMIN or CUSTOMER
 }
-

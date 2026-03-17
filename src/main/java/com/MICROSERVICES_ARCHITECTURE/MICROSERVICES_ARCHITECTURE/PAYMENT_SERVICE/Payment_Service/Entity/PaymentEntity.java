@@ -2,9 +2,11 @@ package com.MICROSERVICES_ARCHITECTURE.MICROSERVICES_ARCHITECTURE.PAYMENT_SERVIC
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "payments")
+@Data
 public class PaymentEntity {
 
     @Id
@@ -13,6 +15,6 @@ public class PaymentEntity {
 
     private Long orderId;
     private Double amount;
-    private String status;
+    private String status; // e.g., "PENDING", "PAID"
 }
 

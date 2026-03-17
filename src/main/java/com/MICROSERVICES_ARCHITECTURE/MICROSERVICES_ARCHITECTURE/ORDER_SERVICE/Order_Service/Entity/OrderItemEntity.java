@@ -2,9 +2,11 @@ package com.MICROSERVICES_ARCHITECTURE.MICROSERVICES_ARCHITECTURE.ORDER_SERVICE.
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "order_items")
+@Data
 public class OrderItemEntity {
 
     @Id
